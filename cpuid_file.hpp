@@ -129,7 +129,7 @@ private:
 	/* this function returns a pointer
 	 * to the register that	 is inputted
 	 */
-	const std::bitset<32>& get_register(std::int32_t order_entry, const WHATREGISTER&& r)
+	const std::bitset<32> get_register(std::int32_t order_entry, const WHATREGISTER&& r)
 	{
 		return std::bitset<32>(this->reg_w_order_idx[order_entry][r]);
 	}
